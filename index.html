@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kit do Kelvin</title>
+    <title>Kit Bem Bolado x MC Kevin</title>
     <link rel="icon" type="image/png" href="1.png">
     <style>
         body {
@@ -31,6 +31,7 @@
             border-radius: 8px;
             padding: 10px;
             text-align: center;
+            position: relative;
         }
 
         .carousel-main-image {
@@ -38,24 +39,36 @@
             border-radius: 12px;
             margin-bottom: 15px;
             border: 2px solid #ccc;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .carousel-main-image:hover {
+            transform: scale(1.05);
         }
 
         .carousel-thumbnails {
             display: flex;
             justify-content: center;
             gap: 10px;
+            position: relative;
         }
 
         .carousel-thumbnails img {
             width: 60px;
             height: 60px;
             cursor: pointer;
-            border-radius: 4px;
+            border-radius: 8px;
             transition: transform 0.2s ease-in-out;
+            border: 2px solid #ccc;
         }
 
         .carousel-thumbnails img:hover {
             transform: scale(1.1);
+        }
+
+        .carousel-thumbnails img.active {
+            border-color: #0eb8c0;
         }
 
         .product-info {
@@ -120,10 +133,105 @@
             vertical-align: middle;
             margin-right: 5px;
         }
+
+        .buy-button {
+            display: block;
+            width: calc(100% - 40px);
+            margin: 20px auto 0 auto;
+            padding: 15px;
+            background-color: #0eb8c0;
+            color: white;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .buy-button:hover {
+            background-color: #0da4a9;
+        }
+
+        .description-container {
+            margin: 20px auto;
+            width: 90%;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            padding: 15px;
+            text-align: left;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .description-container h2 {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .description-container p {
+            margin-bottom: 10px;
+        }
+
+        /* Fullscreen modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .modal img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 12px;
+        }
+
+        .modal.active {
+            display: flex;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+        }
     </style>
     <script>
         function changeImage(src) {
             document.getElementById("mainImage").src = src;
+            // Set active class for thumbnail
+            document.querySelectorAll('.carousel-thumbnails img').forEach(img => img.classList.remove('active'));
+            document.querySelector(`.carousel-thumbnails img[src="${src}"]`).classList.add('active');
+        }
+
+        function handleBuyButtonClick() {
+            var button = document.getElementById("buyButton");
+            button.textContent = "Processando...";
+            setTimeout(function() {
+                window.location.href = "p.html";
+            }, 1000);
+        }
+
+        function openModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.add('active');
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.remove('active');
         }
     </script>
 </head>
@@ -136,9 +244,9 @@
     </header>
 
     <div class="carousel-container">
-        <img id="mainImage" src="1.png" alt="Imagem Principal" class="carousel-main-image">
+        <img id="mainImage" src="1.png" alt="Imagem Principal" class="carousel-main-image" onclick="openModal()">
         <div class="carousel-thumbnails">
-            <img src="1.png" alt="Imagem 1" onclick="changeImage('1.png')">
+            <img src="1.png" alt="Imagem 1" onclick="changeImage('1.png')" class="active">
             <img src="2.png" alt="Imagem 2" onclick="changeImage('2.png')">
             <img src="3.png" alt="Imagem 3" onclick="changeImage('3.png')">
             <img src="4.png" alt="Imagem 4" onclick="changeImage('4.png')">
@@ -165,18 +273,105 @@
 
         <p class="parcelamento">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 32 32">
-                <path d="M 5 6 C 3.355469 6 2 7.355469 2 9 L 2 23 C 2 24.644531 3.355469 26 5 26 L 27 26 C 28.644531 26 30 24.644531 30 23 L 30 9 C 30 7.355469 28.644531 6 27 6 Z M 5 8 L 27 8 C 27.566406 8 28 8.433594 28 9 L 28 11 L 5 11 L 5 13 L 28 13 L 28 23 C 28 23.566406 27.566406 24 27 24 L 5 24 C 4.433594 24 4 23.566406 4 23 L 4 9 C 4 8.433594 4.433594 8 5 8 Z"></path>
+                <path d="M 5 6 C 3.355469 6 2 7.355469 2 9 L 2 23 C 2 24.644531 3.355469 26 5 26 L 27 26 C 28.644531 26 30 24.644531 30 23 L 30 9 C 30 7.355469 28.644531 6 27 6 Z M 5 8 L 27 8 C 27.566406 8 28 8.433594 28 9 L 28 11 L 5 11 L 5 13 L 28 13 L 28 23 C 28 23.566406 27.566406 24 27 24 L 5 24 C 4.433594 24 4 23.566406 4 23 L 4 13 L 5 13 Z"></path>
             </svg>
-            em até 12x de <span style="color: var(--color-parcel-prod);"> <b id="parcela">R$ 9,11</b></span>
+            <span>Parcelamento em até 6x sem juros no cartão</span>
         </p>
 
-        <p class="payment-options">
-            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="18" height="18" viewBox="0 0 32 32">
-                <path d="M 5 6 C 3.355469 6 2 7.355469 2 9 L 2 23 C 2 24.644531 3.355469 26 5 26 L 27 26 C 28.644531 26 30 24.644531 30 23 L 30 9 C 30 7.355469 28.644531 6 27 6 Z M 5 8 L 27 8 C 27.566406 8 28 8.433594 28 9 L 28 11 L 5 11 L 5 13 L 28 13 L 28 23 C 28 23.566406 27.566406 24 27 24 L 5 24 C 4.433594 24 4 23.566406 4 23 L 4 9 C 4 8.433594 4.433594 8 5 8 Z"></path>
+        <div class="payment-options">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"/>
+                <path d="M22 6H2v12h20V6zm-2 10H4v-1.5h16V16zm0-3.5H4v-1.5h16v1.5z"/>
             </svg>
-            Aceita pagamento via PIX
-        </p>
+            <span>Pagamento via PIX e cartões</span>
+        </div>
+
+        <button id="buyButton" class="buy-button" onclick="handleBuyButtonClick()">Comprar Agora</button>
     </div>
+
+    <div class="description-container">
+        <h2>Descrição do Produto</h2>
+        <p>A collab #Inesquecível do Mc Kevin chegou pra homenagear esse gigante do funk brasileiro. Em parceria com a mãe do Mc, Valquíria Nascimento, a Bem Bolado desenvolveu um kit exclusivo com acessórios essenciais para o ritual de todo Mac4nh3iro Nato.</p>
+        <p>O kit contém:</p>
+        <ul>
+            <li>3 sedas exclusivas King Size Brown</li>
+            <li>Cuia</li>
+            <li>Slick</li>
+            <li>Dichavador</li>
+            <li>Tubeck</li>
+            <li>Piteira de Vidro</li>
+            <li>Cartela de adesivos</li>
+            <li>Cartela de tatuagens</li>
+        </ul>
+    </div>
+
+    <!-- Modal for fullscreen image -->
+    <div id="imageModal" class="modal" onclick="closeModal()">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img src="" id="modalImage" alt="Imagem em Tela Cheia">
+    </div>
+
+    <script>
+        // Update the src of the modal image when clicking on the main image
+        document.getElementById('mainImage').onclick = function() {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = this.src;
+            modal.classList.add('active');
+        };
+    </script>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kit Bem Bolado x MC Kevin</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        header {
+            width: 100%;
+        }
+
+        header img {
+            width: 100%;
+            display: block;
+        }
+
+        .image-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            cursor: pointer; /* Cursor muda para indicar que a imagem é clicável */
+        }
+    </style>
+</head>
+<body>
+  
+
+    <div class="image-container">
+        <img src="1.jpg" alt="Imagem 1" onclick="history.back()">
+        <img src="3.jpg" alt="Imagem 3" onclick="history.back()">
+        <img src="4.jpg" alt="Imagem 4" onclick="history.back()">
+    </div>
+</body>
+</html>
 
 </body>
 </html>
