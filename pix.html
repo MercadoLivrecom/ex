@@ -1,0 +1,237 @@
+<html lang="pt-BR">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Pagamento PIX</title> 
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: ;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #555;
+    }
+    .header, .footer {
+      width: 100%;
+      background-color: #7929a5;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+    .header img {
+      max-width: 200px;
+      height: auto;
+    }
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      max-width: 100%;
+      width: 100%;
+      margin-top: ;
+      box-sizing: border-box;
+    }
+    h1 {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+    .info {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      border-radius: 8px;
+      background-color: #fafafa;
+      margin-bottom: 10px;
+      border: 1px solid #ccc;
+    }
+    .label {
+      font-weight: bold;
+      color: #555;
+    }
+    .value {
+      color: #000;
+    }
+    .qr-container {
+      display: flex;
+      justify-content: center;
+      margin: 23px 0;
+      border: 2px dashed #ccc;
+      width: 200px;
+      height: 200px;
+      align-items: center;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+    }
+    .pix-key-container {
+      background-color: #f0f0f0;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .pix-key-container p {
+      margin: 0;
+      word-break: break-all;
+    }
+    .copy-button {
+      background-color: #7929a5;
+      color: #fff;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      cursor: pointer;
+      width: 100%;
+      margin-top: 10px;
+    }
+    .copy-button:hover {
+      background-color: #5e2185;
+    }
+    .timer {
+      font-size: 20px;
+      color: #ff0000;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .instructions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .instruction-step {
+      background-color: #fafafa;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+    .footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #7929a5;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    }
+    @media (max-width: 100%) {
+      .container {
+        padding: 19px;
+      }
+      .info {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .label, .value {
+        width: 100%;
+      }
+      .copy-button {
+        font-size: 14px;
+      }
+    }
+  </style> 
+  <script>
+    function copiarChave() {
+      const chavePix = document.getElementById('pix-key').innerText;
+      navigator.clipboard.writeText(chavePix).then(() => {
+        alert('Chave Pix copiada com sucesso!');
+      });
+    }
+
+    function startTimer(duration, display) {
+      let timer = duration, minutes, seconds;
+      setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+
+        display.textContent = minutes + ":" + seconds;
+
+        if (--timer < 0) {
+          timer = duration;
+        }
+      }, 1000);
+    }
+
+    window.onload = function () {
+      const params = new URLSearchParams(window.location.search);
+      document.getElementById('plano').innerText = params.get('plano');
+      document.getElementById('validade').innerText = params.get('validade');
+      document.getElementById('numero').innerText = params.get('numero');
+      document.getElementById('valorPlano').innerText = params.get('plano');
+
+      const thirtyMinutes = 60 * 30,
+        display = document.querySelector('#time');
+      startTimer(thirtyMinutes, display);
+    };
+  </script> 
+ </head> 
+ <body> 
+  <div class="container"> 
+   <h1> escanei o QR Code ou Copie a chave pix </h1> 
+   <div class="info"> 
+    <div class="label">
+      valor a pagar: R$ 89.90
+    </div> 
+    <div class="value" id="plano"></div> 
+   </div> 
+   <div class="info"> 
+    <div class="label">
+      Copie o código ou escaneie o QR Code 
+    </div> 
+    <div class="value" id="validade"></div> 
+   </div> 
+   <div class="info"> 
+    <div class="label">
+      aguardando o pagamento ...
+    </div> 
+    <div class="value" id="numero"></div> 
+   </div> 
+   <div class="qr-container"> 
+    <p>QR Code</p> 
+   </div> 
+   <div class="pix-key-container"> 
+    <p id="pix-key">Chave Pix: 00020126720014br.gov.bcb.pix0129mailto:4239993@vakinha.com.br0217Compra segura pix5204000053039865802BR5914Recarga online6015Recarga de celu62070503***6304201A</p> 
+    <button class="copy-button" onclick="copiarChave()">Copiar Chave Pix</button> 
+   </div> 
+   <div class="timer">
+    Pagamento expira em: 
+    <span id="time">30:00</span>
+   </div> 
+   <div class="info"> 
+    <div class="label">
+     Valor do Plano:
+    </div> 
+    <div class="value" id="valorPlano"></div> 
+   </div> 
+   <div class="instructions"> 
+    <div class="instruction-step"> 
+     <strong>1.</strong> Abra o aplicativo do seu banco. 
+    </div> 
+    <div class="instruction-step"> 
+     <strong>2.</strong> Procure pela opção de pagamento via PIX. 
+    </div> 
+    <div class="instruction-step"> 
+     <strong>3.</strong> Escaneie o código QR exibido acima. 
+    </div> 
+    <div class="instruction-step"> 
+     <strong>4.</strong> Confirme o pagamento e pronto! 
+    </div> 
+    <div class="instruction-step"> 
+     <strong>5.</strong> Caso tenha dificuldades, copie a chave PIX acima e cole no campo de chave no seu aplicativo bancário. 
+    </div> 
+    <div class="instruction-step"> 
+     <strong>6.</strong> Se o valor estiver zerado, edite o valor para corresponder ao plano selecionado. 
+    </div> 
+   </div> 
+  </div> 
+
+  </div> 
+ </body>
+</html>
