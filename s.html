@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Demonstração</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        header {
+            width: 100%;
+        }
+
+        header img {
+            width: 100%;
+            display: block;
+        }
+
+        .image-container {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+            cursor: pointer; /* Cursor muda para indicar que a imagem é clicável */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="cabecario.png" alt="Cabeçário">
+    </header>
+
+    <div class="image-container">
+        <img src="1.jpg" alt="Imagem 1" onclick="history.back()">
+        <img src="2.jpg" alt="Imagem 2" onclick="history.back()">
+        <img src="3.jpg" alt="Imagem 3" onclick="history.back()">
+        <img src="4.jpg" alt="Imagem 4" onclick="history.back()">
+    </div>
+</body>
+</html>
