@@ -1,0 +1,112 @@
+#EXTM3U
+#EXT-X-SESSION-DATA:DATA-ID="com.xui.1_5_5r2"
+#EXTINF:-1 tvg-id="ABC" tvg-name="USA: ABC [M]" tvg-logo="http://stolime.cc/lives/INTERNACIONAIS/ABC.png" group-title="CANAIS | ESTADOS UNIDOS",USA: ABC [M]
+http://lidns.cc:80/pb8rkt/4rquq9/119490.ts
+#EXTINF:-1 tvg-id="" tvg-name="PT: CANAL 11 [M]" tvg-logo="http://stolime.cc/lives/WEBPLAYER/PLAY-LOGO.png" group-title="CANAIS | PORTUGAL",PT: CANAL 11 [M]
+http://lidns.cc:80/pb8rkt/4rquq9/119489.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="US NBA LEAGUE PASS 10 [M]" tvg-logo="http://stolime.cc/lives/ESPORTES/NBA_LEAGUE_PASS.png" group-title="CANAIS | NBA | USA",US NBA LEAGUE PASS 10 [M]
+http://lidns.cc:80/pb8rkt/4rquq9/119480.ts
+#EXTINF:-1 tvg-id="NBALeaguePass.br" tvg-name="US NBA LEAGUE PASS 1 [M]" tvg-logo="http://stolime.cc/lives/ESPORTES/NBA_LEAGUE_PASS.png" group-title="CANAIS | NBA | USA",US NBA LEAGUE PASS 1 [M]
+http://lidns.cc:80/pb8rkt/4rquq9/95534.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="HBO MAX STAR+ 04 [M]" tvg-logo="http://stolime.cc/lives/HBO/HBO%20MAX.png" group-title="CANAIS | ESPORTES",HBO MAX STAR+ 04 [M]
+http://lidns.cc:80/pb8rkt/4rquq9/118108.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="GLOBO REDE AMAZONICA PARINTINS [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/GLOBO%202021.png" group-title="CANAIS | GLOBO",GLOBO REDE AMAZONICA PARINTINS [M]
+http://lidns.cc:80/pb8rkt/4rquq9/117332.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="GLOBO REDE AMAZONICA ITACOATIARA [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/GLOBO%202021.png" group-title="CANAIS | GLOBO",GLOBO REDE AMAZONICA ITACOATIARA [M]
+http://lidns.cc:80/pb8rkt/4rquq9/117331.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="GLOBO JUAZEIRO BAHIA [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/GLOBO%202021.png" group-title="CANAIS | GLOBO",GLOBO JUAZEIRO BAHIA [M]
+http://lidns.cc:80/pb8rkt/4rquq9/117330.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="GLOBO TV OESTE BARREIRAS BAHIA [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/GLOBO%202021.png" group-title="CANAIS | GLOBO",GLOBO TV OESTE BARREIRAS BAHIA [M]
+http://lidns.cc:80/pb8rkt/4rquq9/117329.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="GLOBO TV SANTA CRUZ ITABUNA BAHIA [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/GLOBO%202021.png" group-title="CANAIS | GLOBO",GLOBO TV SANTA CRUZ ITABUNA BAHIA [M]
+http://lidns.cc:80/pb8rkt/4rquq9/117328.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="GLOBO FEIRA DE SANTANA BAHIA [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/GLOBO%202021.png" group-title="CANAIS | GLOBO",GLOBO FEIRA DE SANTANA BAHIA [M]
+http://lidns.cc:80/pb8rkt/4rquq9/117327.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="GLOBO JUAZEIRO DO NORTE [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/GLOBO%202021.png" group-title="CANAIS | GLOBO",GLOBO JUAZEIRO DO NORTE [M]
+http://lidns.cc:80/pb8rkt/4rquq9/117326.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="GLOBO TV ANHANGUERA CATALAO [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/GLOBO%202021.png" group-title="CANAIS | GLOBO",GLOBO TV ANHANGUERA CATALAO [M]
+http://lidns.cc:80/pb8rkt/4rquq9/117325.ts
+#EXTINF:-1 tvg-id="Globogo.br" tvg-name="GLOBO TV ANHANGUERA ITUMBIARA [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/GLOBO%202021.png" group-title="CANAIS | GLOBO",GLOBO TV ANHANGUERA ITUMBIARA [M]
+http://lidns.cc:80/pb8rkt/4rquq9/117324.ts
+#EXTINF:-1 tvg-id="ZYA588" tvg-name="GLOBO TV ANHANGUERA JATAI [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/GLOBO%202021.png" group-title="CANAIS | GLOBO",GLOBO TV ANHANGUERA JATAI [M]
+http://lidns.cc:80/pb8rkt/4rquq9/117323.ts
+#EXTINF:-1 tvg-id="ANGLUHD" tvg-name="GLOBO TV ANHANGUERA LUZIANIA [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/GLOBO%202021.png" group-title="CANAIS | GLOBO",GLOBO TV ANHANGUERA LUZIANIA [M]
+http://lidns.cc:80/pb8rkt/4rquq9/117322.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="GLOBO TV ANHANGUERA PARAGANTU [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/GLOBO%202021.png" group-title="CANAIS | GLOBO",GLOBO TV ANHANGUERA PARAGANTU [M]
+http://lidns.cc:80/pb8rkt/4rquq9/117321.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="RECORD TV TROPICAL [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/REDE%20RECORD%20TV.png" group-title="CANAIS | RECORD",RECORD TV TROPICAL [M]
+http://lidns.cc:80/pb8rkt/4rquq9/117320.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="RECORD TV PAJUÇARA [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/REDE%20RECORD%20TV.png" group-title="CANAIS | RECORD",RECORD TV PAJUÇARA [M]
+http://lidns.cc:80/pb8rkt/4rquq9/116880.ts
+#EXTINF:-1 tvg-id="bandmaceio.br" tvg-name="BAND MACEIO [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/BAND.png" group-title="CANAIS | ABERTOS",BAND MACEIO [M]
+http://lidns.cc:80/pb8rkt/4rquq9/116878.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="BAND MG [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/BAND.png" group-title="CANAIS | ABERTOS",BAND MG [M]
+http://lidns.cc:80/pb8rkt/4rquq9/110234.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="BAND AMAZONAS [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/BAND.png" group-title="CANAIS | ABERTOS",BAND AMAZONAS [M]
+http://lidns.cc:80/pb8rkt/4rquq9/110233.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="BAND VALE [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/BAND.png" group-title="CANAIS | ABERTOS",BAND VALE [M]
+http://lidns.cc:80/pb8rkt/4rquq9/110232.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="BAND PRESIDENTE PRUDENTE [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/BAND.png" group-title="CANAIS | ABERTOS",BAND PRESIDENTE PRUDENTE [M]
+http://lidns.cc:80/pb8rkt/4rquq9/110231.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="BAND POA [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/BAND.png" group-title="CANAIS | ABERTOS",BAND POA [M]
+http://lidns.cc:80/pb8rkt/4rquq9/110230.ts
+#EXTINF:-1 tvg-id="Bandpr.br" tvg-name="BAND PR [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/BAND.png" group-title="CANAIS | ABERTOS",BAND PR [M]
+http://lidns.cc:80/pb8rkt/4rquq9/110229.ts
+#EXTINF:-1 tvg-id="Bandba.br" tvg-name="BAND BAHIA [M]" tvg-logo="http://stolime.cc/lives/CANAIS%20ABERTOS/BAND.png" group-title="CANAIS | ABERTOS",BAND BAHIA [M]
+http://lidns.cc:80/pb8rkt/4rquq9/110228.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="CONMEBOL PARAMOUNT+ 1 [HD]" tvg-logo="http://stolime.cc/lives/ESPORTES/CONMEBOL.png" group-title="CANAIS | CONMEBOL",CONMEBOL PARAMOUNT+ 1 [HD]
+http://lidns.cc:80/pb8rkt/4rquq9/89885.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="CONMEBOL PARAMOUNT+ 2 [HD]" tvg-logo="http://stolime.cc/lives/ESPORTES/CONMEBOL.png" group-title="CANAIS | CONMEBOL",CONMEBOL PARAMOUNT+ 2 [HD]
+http://lidns.cc:80/pb8rkt/4rquq9/89888.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="CONMEBOL PARAMOUNT+ 3 [HD]" tvg-logo="http://stolime.cc/lives/ESPORTES/CONMEBOL.png" group-title="CANAIS | CONMEBOL",CONMEBOL PARAMOUNT+ 3 [HD]
+http://lidns.cc:80/pb8rkt/4rquq9/89891.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="CONMEBOL PARAMOUNT+ 4 [HD]" tvg-logo="http://stolime.cc/lives/ESPORTES/CONMEBOL.png" group-title="CANAIS | CONMEBOL",CONMEBOL PARAMOUNT+ 4 [HD]
+http://lidns.cc:80/pb8rkt/4rquq9/89894.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="PRIME VIDEO 3 [HD]" tvg-logo="http://stolime.cc/lives/ESPORTES/PRIME_VIDEO.png" group-title="CANAIS | PRIME VIDEO",PRIME VIDEO 3 [HD]
+http://lidns.cc:80/pb8rkt/4rquq9/97050.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="CONMEBOL PARAMOUNT+ 1 [M]" tvg-logo="http://stolime.cc/lives/ESPORTES/CONMEBOL.png" group-title="CANAIS | CONMEBOL",CONMEBOL PARAMOUNT+ 1 [M]
+http://lidns.cc:80/pb8rkt/4rquq9/89884.ts
+#EXTINF:-1 tvg-id="Jpnews.br" tvg-name="JOVEM PAN NEWS [4K]" tvg-logo="http://stolime.cc/lives/4K/JOVEM_PAN%20NEWS%204K.png" group-title="CANAIS | UHD 4K",JOVEM PAN NEWS [4K]
+http://lidns.cc:80/pb8rkt/4rquq9/102420.ts
+#EXTINF:-1 tvg-id="Discoveryhomehealth.br" tvg-name="DISC HOME & HEALTH [4K]" tvg-logo="http://stolime.cc/lives/4K/DISCOVERY%20HOME%20&%20HEALTH%204K.png" group-title="CANAIS | UHD 4K",DISC HOME & HEALTH [4K]
+http://lidns.cc:80/pb8rkt/4rquq9/102419.ts
+#EXTINF:-1 tvg-id="Tcaction.br" tvg-name="TELECINE ACTION [4K]" tvg-logo="http://stolime.cc/lives/4K/TELECINE%20ACTION%204K.png" group-title="CANAIS | UHD 4K",TELECINE ACTION [4K]
+http://lidns.cc:80/pb8rkt/4rquq9/102418.ts
+#EXTINF:-1 tvg-id="Studiouniversal.br" tvg-name="UNIVERSAL [4K]" tvg-logo="http://stolime.cc/lives/4K/UNIVERSAL%20CHANNEL%204K.png" group-title="CANAIS | UHD 4K",UNIVERSAL [4K]
+http://lidns.cc:80/pb8rkt/4rquq9/102417.ts
+#EXTINF:-1 tvg-id="Gnt.br" tvg-name="GNT [4K]" tvg-logo="http://stolime.cc/lives/4K/GNT%204K.png" group-title="CANAIS | UHD 4K",GNT [4K]
+http://lidns.cc:80/pb8rkt/4rquq9/102416.ts
+#EXTINF:-1 tvg-id="Discturbo.br" tvg-name="DISC TURBO [4K]" tvg-logo="http://stolime.cc/lives/4K/DISCOVERY%20TURBO%204K.png" group-title="CANAIS | UHD 4K",DISC TURBO [4K]
+http://lidns.cc:80/pb8rkt/4rquq9/102415.ts
+#EXTINF:-1 tvg-id="Comedycentral.br" tvg-name="COMEDY CENTRAL [4K]" tvg-logo="http://stolime.cc/lives/4K/COMEDY%20CENTRAL%204K.png" group-title="CANAIS | UHD 4K",COMEDY CENTRAL [4K]
+http://lidns.cc:80/pb8rkt/4rquq9/102414.ts
+#EXTINF:-1 tvg-id="Viva.br" tvg-name="VIVA [4K]" tvg-logo="http://stolime.cc/lives/4K/VIVA%204K.png" group-title="CANAIS | UHD 4K",VIVA [4K]
+http://lidns.cc:80/pb8rkt/4rquq9/102413.ts
+#EXTINF:-1 tvg-id="Cnn.br" tvg-name="CNN BRASIL [4K]" tvg-logo="http://stolime.cc/lives/4K/CNN%20BRASIL%204K.png" group-title="CANAIS | UHD 4K",CNN BRASIL [4K]
+http://lidns.cc:80/pb8rkt/4rquq9/102412.ts
+#EXTINF:-1 tvg-id="Globonews.br" tvg-name="GLOBO NEWS [4K]" tvg-logo="http://stolime.cc/lives/4K/GLOBO%20NEWS%204K.png" group-title="CANAIS | UHD 4K",GLOBO NEWS [4K]
+http://lidns.cc:80/pb8rkt/4rquq9/102411.ts
+#EXTINF:-1 tvg-id="Axn.br" tvg-name="AXN [4K]" tvg-logo="http://stolime.cc/lives/4K/AXN%204K.png" group-title="CANAIS | UHD 4K",AXN [4K]
+http://lidns.cc:80/pb8rkt/4rquq9/102410.ts
+#EXTINF:-1 tvg-id="Boxkids.br" tvg-name="F1 TV PRO 08 [M]" tvg-logo="http://stolime.cc/lives/ESPORTES/F1_TV.png" group-title="CANAIS | ESPORTES",F1 TV PRO 08 [M]
+http://lidns.cc:80/pb8rkt/4rquq9/102409.ts
+#EXTINF:-1 tvg-id="Boxkids.br" tvg-name="F1 TV PRO 07 [M]" tvg-logo="http://stolime.cc/lives/ESPORTES/F1_TV.png" group-title="CANAIS | ESPORTES",F1 TV PRO 07 [M]
+http://lidns.cc:80/pb8rkt/4rquq9/102408.ts
+#EXTINF:-1 tvg-id="Boxkids.br" tvg-name="F1 TV PRO 06 [M]" tvg-logo="http://stolime.cc/lives/ESPORTES/F1_TV.png" group-title="CANAIS | ESPORTES",F1 TV PRO 06 [M]
+http://lidns.cc:80/pb8rkt/4rquq9/102407.ts
+#EXTINF:-1 tvg-id="Boxkids.br" tvg-name="F1 TV PRO 05 [M]" tvg-logo="http://stolime.cc/lives/ESPORTES/F1_TV.png" group-title="CANAIS | ESPORTES",F1 TV PRO 05 [M]
+http://lidns.cc:80/pb8rkt/4rquq9/102406.ts
+#EXTINF:-1 tvg-id="Boxkids.br" tvg-name="F1 TV PRO 04 [M]" tvg-logo="http://stolime.cc/lives/ESPORTES/F1_TV.png" group-title="CANAIS | ESPORTES",F1 TV PRO 04 [M]
+http://lidns.cc:80/pb8rkt/4rquq9/102405.ts
+#EXTINF:-1 tvg-id="Boxkids.br" tvg-name="F1 TV PRO 03 [M]" tvg-logo="http://stolime.cc/lives/ESPORTES/F1_TV.png" group-title="CANAIS | ESPORTES",F1 TV PRO 03 [M]
+http://lidns.cc:80/pb8rkt/4rquq9/102404.ts
+#EXTINF:-1 tvg-id="Boxkids.br" tvg-name="F1 TV PRO 02 [M]" tvg-logo="http://stolime.cc/lives/ESPORTES/F1_TV.png" group-title="CANAIS | ESPORTES",F1 TV PRO 02 [M]
+http://lidns.cc:80/pb8rkt/4rquq9/102403.ts
+#EXTINF:-1 tvg-id="Boxkids.br" tvg-name="F1 TV PRO 01 [M]" tvg-logo="http://stolime.cc/lives/ESPORTES/F1_TV.png" group-title="CANAIS | ESPORTES",F1 TV PRO 01 [M]
+http://lidns.cc:80/pb8rkt/4rquq9/102402.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="CONMEBOL PARAMOUNT+ 4 [M]" tvg-logo="http://stolime.cc/lives/ESPORTES/CONMEBOL.png" group-title="CANAIS | CONMEBOL",CONMEBOL PARAMOUNT+ 4 [M]
+http://lidns.cc:80/pb8rkt/4rquq9/89893.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="CONMEBOL PARAMOUNT+ 3 [M]" tvg-logo="http://stolime.cc/lives/ESPORTES/CONMEBOL.png" group-title="CANAIS | CONMEBOL",CONMEBOL PARAMOUNT+ 3 [M]
+http://lidns.cc:80/pb8rkt/4rquq9/89890.ts
+#EXTINF:-1 tvg-id="Like.br" tvg-name="CONMEBOL PARAMOUNT+ 2 [M]" tvg-logo="http://stolime.cc/lives/ESPORTES/CONMEBOL.png" group-title="CANAIS | CONMEBOL",CONMEBOL PARAMOUNT+ 2 [M]
+http://lidns
